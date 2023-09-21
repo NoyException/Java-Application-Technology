@@ -1,6 +1,10 @@
 # java/JavaHomework
 
+楼sir的作业/片段/提示
 
+**请勿直接抄代码！请勿直接抄代码！请勿直接抄代码！**
+
+下面是自动生成的README
 
 ## Getting Started
 
@@ -13,19 +17,3 @@ HTTPS clone URL: https://git.jetbrains.space/noyexception/java/JavaHomework.git
 
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
-
-## Prerequisites
-
-What things you need to install the software and how to install them.
-
-```
-Examples
-```
-
-## Deployment
-
-Add additional notes about how to deploy this on a production system.
-
-## Resources
-
-Add links to external resources for this project, such as CI server, bug tracker, etc.
