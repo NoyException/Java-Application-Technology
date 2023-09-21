@@ -1,10 +1,10 @@
 # java/JavaHomework
 
-楼sir的作业/片段/提示
+## 项目介绍
+
+这是楼sir的作业的完整代码/代码片段/提示，由Noy使用IntelliJ IDEA编写，Java版本为17。
 
 **请勿直接抄代码！请勿直接抄代码！请勿直接抄代码！**
-
-下面是自动生成的README
 
 ## Getting Started
 
