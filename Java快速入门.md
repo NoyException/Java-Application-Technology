@@ -96,7 +96,7 @@ public class A{
 - protected
 - private
 - (package-private)
-  如果不加，就默认为package-private，在同一个文件目录下的类都可以访问（但子目录不行）。
+  如果不加，就默认为package-private，在protected权限的基础下，同一个文件目录下的类都可以访问（但子目录不行）。
 
 > final
 
