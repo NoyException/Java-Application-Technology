@@ -5,7 +5,7 @@
 运行方式有多种： 
 - 使用如下指令运行
 ```shell
-gradle run
+./gradlew run
 ```
 使用该方法时，可以在[build.gradle.kts](build.gradle.kts)中修改要爬取的地址。
 

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="测试网页">
+    <title>测试</title>
+</head>
+
+<body>
+<h2>表达式计算器</h2>
+<p>请输入表达式：</p>
+<form action="test.zup" method="get">
+    <p style="display: inline-block;"><label>
+        <textarea rows="10" cols="30" name="expr">${expr}</textarea>
+    </label></p>
+    <p style="display: inline-block;"><input type="submit" value="计算"></p>
+</form>
+<p>计算结果：Result = <%
+    function gcd(a, b)
+        if $b > $a
+            return gcd($b, $a)
+        endif
+        if $a % $b == 0
+            return $b
+        endif
+        return gcd($b, $a % $b)
+    endfunction
+
+    function fun()
+        ${expr}
+    endfunction
+
+    res = fun()
+
+    if startsWith($res,'/')
+        res = substring($res,1)
+        if equals($res,'你好')
+            return '你好呀！'
+        endif
+    else
+        return $res
+    endif
+    %></p>
+<p>支持括号</p>
+<p>支持自定义函数</p>
+<p>支持的运算符：</p>
+<p>
+    <li>+、-、*、/、%</li>
+    <li><<、>></li>
+    <li>三目运算符?:</li>
+    <li>比较运算符><=</li>
+    <li>位运算符&、^、|</li>
+    <li>逻辑运算符&&、||、!（非）</li>
+    <li>负数-</li>
+    <li>阶乘!与双阶乘!!</li>
+</p>
+<p>支持的函数：</p>
+<p>
+    <li>High、Low</li>
+    <li>系列三角函数</li>
+    <li>ln、lg、log</li>
+    <li>sqrt、cbrt</li>
+    <li>abs、signum</li>
+    <li>ceil、floor、round</li>
+    <li>max与min（变量支持2到4个）</li>
+    <li>pow、exp</li>
+    <li>rand()、rand(a)、rand(b,a)</li>
+</p>
+<p>支持的字符串处理函数：</p>
+<p>
+    <li>length</li>
+    <li>substring</li>
+    <li>indexOf、lastIndexOf</li>
+    <li>startsWith、endsWith</li>
+    <li>contains</li>
+    <li>replace、replaceFirst</li>
+    <li>concat</li>
+    <li>toLowerCase、toUpperCase</li>
+    <li>equals、matches</li>
+</p>
+<p>支持的常量：</p>
+<p>
+    <li>true和false</li>
+    <li>PI和e</li>
+    <li>十六进制0x、八进制0、二进制0b</li>
+</p>
+</body>
+</html>
